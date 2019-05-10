@@ -1,4 +1,4 @@
-# atbash-group-projects
+# Atbash Group Projects
 
 ## Minneapolis Public Schools
 
@@ -7,6 +7,8 @@ Client(s): Eliana Power
 Application to assist with scheduling community education classes. It's currently a very labor intensive process managed through a Google Forms, an excel spreadsheet and a lot of email/phone conversations. Need to coordinate classes, instructors, and the times for particular spaces. 
 
 May be helpful to import/export data from spreadsheet (CSV file).
+(See samples from spreadsheets in folder.)
+
 
 ## HighTech Kids
 
@@ -15,7 +17,9 @@ Website: https://hightechkids.org/
 
 High Tech Kids is a nonprofit supporting teams involved in the Firs Lego League tournaments. They support more than 50,000 students across the state, with the help of over 2000 volunteers. They are looking for an application to help teams track scoring as they prepare for the for annual competition. 
 
-Each year's competition has different goals for scoring. They already have an application that generates those rules as XML, which this application could read in to create an online score card. There would be multiple roles for this application:
+Each year's competition has different goals for scoring. They already have an application that generates those rules as XML, which this application could read in to create an online score card. (See samples in folder.)
+
+There will be multiple roles for this application:
 
 - admin - create/upload the rules for the year
 - coach - add new score results for their team, view history of scores, setup team/student access (?)
@@ -30,6 +34,8 @@ Client: Cindy Tong
 Farmers are required by the FDA to keep certain records about their business and production. These records are critical when food safety events happen. This record keeping can be difficult for farmers working in field and farm environments. The goal of this project is to develop an application to assist with this record keeping. 
 
 This was previously explored by the Cypress UX cohort, with a series of wireframes produced for a potential application. There are some mock-ups from this that may be helpful when talking with the client, but do not assume that they must represent the application to develop. The scope will be smaller, and the mockup flow and layout may change as you develop your own scope and wireframes.
+
+(See sample forms in folder. Also includes samples from UX Mockups.)
 
 Application roles:
 

@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<fll title="2018 Minnesota FIRST LEGO League - Into Orbit"
+	copyright="2018 The United States Foundation for Inspiration and Recognition of Science and Technology (FIRST) and The LEGO Group. Used by special permission. All rights reserved."
+	revision="J9" schemaVersion="2">
+
+	<Performance minimumScore="0" weight="1">
+
+		<goal initialValue="0" name="m01_vehicle_payload"
+			title="M01 - Space Travel - Vehicle Payload" min="0" max="1" multiplier="22" category="M01">
+		</goal>
+
+		<goal initialValue="0" name="m01_supply_payload"
+			title="M01 - Space Travel - Supply Payload" min="0" max="1" multiplier="14" category="M01">
+		</goal>
+
+		<goal initialValue="0" name="m01_crew_payload"
+			title="M01 - Space Travel - Crew Payload" min="0" max="1" multiplier="10" category="M01">
+		</goal>
+
+		<goal initialValue="0" name="m02_both_solar_panels_same"
+			title="M02 - Both Solar Panels are Angled toward same Field"
+			min="0" max="1" multiplier="22" category="M02">
+		</goal>
+
+		<goal initialValue="0" name="m02_solar_panel_other"
+			title="M02 - Solar Panel Angled toward other team" min="0" max="1"
+			multiplier="18" category="M02">
+		</goal>
+
+
+		<goal initialValue="0" name="m03_3d_printing"
+			title="M03 - 3D Printing - Ejected using Regolith Core Sample " category="M03">
+
+			<value value="completely_in_ne"
+				title="In NE Planet Area" score="22" />
+
+			<value value="ejected"
+				title="Ejected"
+				score="18" />
+
+			<value value="none" title="None" score="0" />
+
+		</goal>
+
+		<goal initialValue="0" name="m04_crater_crossing"
+			title="M04 - Crater Crossing" min="0" max="1" multiplier="20" category="M04">
+		</goal>
+
+		<goal initialValue="0" name="m05_extraction"
+			title="M05 - Extraction - all core samples not touching axel" min="0"
+			max="1" multiplier="16" category="M05">
+		</goal>
+
+		<goal initialValue="0" name="m05_extraction_gas"
+			title="M05 - Gas Core Sample" category="M05">
+			<value value="lander_target"
+				title="In Target Circle" score="12" />
+			<value value="in_base" title="In Base" score="10" />
+			<value value="none" title="None" score="0" />
+		</goal>
+
+		<goal initialValue="0" name="m05_extraction_water"
+			title="M05 - Water Core Sample - On Food Growth Chamber" min="0" max="1" multiplier="8" category="M05" />
+
+		<goal initialValue="0" name="m06_cone_module"
+			title="M06 - Cone Module into base" min="0" max="1" multiplier="16" category="M06">
+		</goal>
+
+		<goal initialValue="0" name="m06_tub_module"
+			title="M06 - Tube Module into Habitation Hub port, west side" min="0"
+			max="1" multiplier="16" category="M06">
+		</goal>
+
+		<goal initialValue="0" name="m06_dock_module"
+			title="M06 - Dock Module into Habitation Hub port, east side" min="0"
+			max="1" multiplier="14" category="M06">
+		</goal>
+
+		<goal initialValue="0" name="m07_space_walk"
+			title="M07 - Space Walk Emergency" category="M07">
+			<value value="completely" title="Completely In" score="22" />
+			<value value="partly" title="Partly In" score="18" />
+			<value value="none" title="None" score="0" />
+		</goal>
+
+		<goal initialValue="0" name="m08_aerobic_exercies"
+			title="M08 - Aerobic Exercise" category="M08">
+			<value value="orange"
+				title="Orange"
+				score="22" />
+			<value value="white" title="White" score="20" />
+			<value value="gray"
+				title="Gray"
+				score="18" />
+			<value value="none" title="None" score="0" />
+		</goal>
+
+		<goal name="m09_strength_exercise"
+			title="M09 - Strength Exercise" initialValue="0" min="0" max="1"
+			multiplier="16" category="M09"/>
+
+		<goal name="m10_food_production" title="M10 - Food Production"
+			initialValue="0" min="0" max="1" multiplier="16" category="M10" />
+
+		<goal name="m11_escape_velocity" title="M11 Escape Velocity"
+			initialValue="0" min="0" max="1" multiplier="24" category="M11" />
+
+		<goal name="m12_satellite_orbits" title="M12 - Satellite Orbits"
+			initialValue="0" min="0" max="3" multiplier="8"  category="M12"/>
+
+		<goal name="m13_observatory" title="M13 - Observatory" category="M13"
+			initialValue="0">
+			<value value="orange"
+				title="Orange"
+				score="20" />
+			<value value="white" title="White" score="18" />
+			<value value="gray"
+				title="Gray"
+				score="16" />
+			<value value="none" title="None" score="0" />
+		</goal>
+
+		<goal name="m14_meteroid_deflection_center"
+			title="M14 - Meteroid Deflection - in the Center Section" category="M14"
+			initialValue="0" min="0" max="2" multiplier="12" />
+
+		<goal name="m14_meteroid_deflection_side"
+			title="M14 - Meteroid Deflection - in Either Side Section" category="M14"
+			initialValue="0" min="0" max="2" multiplier="8" />
+
+		<restriction lowerBound="0" upperBound="2"
+			message="There are only 2 meteoroids">
+			<term>
+				<goalRef goal="m14_meteroid_deflection_center"
+					scoreType="raw" />
+			</term>
+			<term>
+				<goalRef goal="m14_meteroid_deflection_side" scoreType="raw" />
+			</term>
+		</restriction>
+
+
+
+		<goal name="m15_lander" title="M15 - Lander Touch-down" category="M15"
+			initialValue="0">
+			<value value="target" title="Target Circle" score="22" />
+			<value value="northeast" title="NE Planet Area"
+				score="20" />
+			<value value="base" title="Base" score="16" />
+			<value value="none" title="None" score="0" />
+		</goal>
+
+		<goal name="penalties" title="P01 - Interruption Penalties"
+			initialValue="0" min="0" max="6" multiplier="-3" />
+
+
+		<tiebreaker>
+			<test winner="LOW">
+				<term>
+					<goalRef goal="penalties" scoreType="raw" />
+				</term>
+			</test>
+
+		</tiebreaker>
+	</Performance>
+
+
+	
+</fll>
